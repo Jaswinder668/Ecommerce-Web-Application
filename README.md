@@ -107,9 +107,9 @@ Run MySQL & create DB ecommerce.
 
 
 
-👤 Admin Access (Demo)
+👤 Admin Access 
 Admin Login:
-Username: admin@example.com
+Username: admin@shopvibe.com
 Password: admin123
 
 ---
