@@ -1,0 +1,62 @@
+<!-- fragments/navbar.html -->
+<nav class="navbar" th:fragment="navbar">
+  <div class="navbar-left">
+    <!-- Logo -->
+   <i class="fa-solid fa-bag-shopping" style="color: #63E6BE;font-size:36px;position: relative;left: 72px;"></i> <a href="/" class="navbar-logo">ShopVibe</a>
+
+    <!-- Search Bar -->
+  
+      <form th:action="@{/product/search}" method="get" class="navbar-search">
+    <input type="text" name="keyword" placeholder="Search products..." />
+    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+</form>
+    
+
+    <!-- 📦 Search Results -->
+    <div id="searchResults" style="position:absolute; background:#fff; z-index:99; width:300px; max-height:300px; overflow-y:auto;"></div>
+
+    <!-- Nav Links -->
+    <ul class="navbar-links">
+      <li><a th:href="@{/index}">Home</a></li>
+
+      <!-- Categories Dropdown -->
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">Categories</a>
+        <ul class="dropdown-menu">
+          <li><a href="/men">Men</a></li>
+          <li><a href="/women">Women</a></li>
+          <li><a href="/electronics">Electronics</a></li>
+          <li><a href="/home-decor">Home Decor</a></li>
+        </ul>
+      </li>
+
+
+
+      <!-- Help -->
+      <li><a href="/help">Help</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">Account</a>
+        <ul class="dropdown-menu">
+          <li><a th:href="@{/login}">Login</a></li>
+          <li><a th:href="@{/register}">SignUp</a></li>
+          <li><a href="/order/myorders">MyOrder</a></li>
+        </ul>
+      </li>
+        <li><a th:href="@{/login}">Login</a></li>
+
+
+
+      <!-- Account Dropdown -->
+      
+         <!-- Cart -->
+      <li><a th:href="@{/cart/cartPage}" class="cart-icon"><i class="fa-solid fa-cart-shopping" style="font-size:18px;"></i>&nbsp;cart</a></li>
+    </ul>
+  </div>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("loaded");
+  });
+</script>
+
+  <!-- ✅ JavaScript for Live Search -->
+</nav>

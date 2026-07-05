@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Address</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css">
+ 
+    <style>
+       .address-form {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 6px 24px rgba(0, 123, 255, 0.1);
+  font-family: 'Poppins', sans-serif;
+  width: 90%;
+  max-width: 850px;
+  margin: 50px auto;
+}
+
+.address-form h2 {
+  color: #333;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+
+.address-form input,
+.address-form select,
+.address-form textarea {
+  width: 100%;
+  padding: 13px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+.address-form input:focus,
+.address-form textarea:focus,
+.address-form select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.15);
+  outline: none;
+}
+
+.address-form .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.address-form .form-row > div {
+  flex: 1;
+  min-width: 250px;
+}
+
+.address-form .radio-group {
+  margin: 10px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.address-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.address-form button:hover {
+  background-color: #0056b3;
+}
+       
+    </style>
+</head>
+<body>
+<div th:replace="fragments/navbar::navbar"></div>
+
+<div class="address-form">
+    <h2>Add a new address</h2>
+
+    <form th:action="@{/order/save_address}" method="post" th:object="${Address}">
+     <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+        <div class="form-row">
+            <div><input type="text" th:field="*{name}" placeholder="Full Name *"></div>
+            <div><input type="text" th:field="*{phone}" placeholder="Mobile Number *"></div>
+        </div>
+
+        <div class="form-row">
+        <input type="hidden" name="user" th:value="${userid}">
+        
+            <div><input type="text" th:field="*{pincode}" placeholder="Pincode *"></div>
+            <div><input type="text" th:field="*{locality}" placeholder="Locality *"></div>
+        </div>
+
+        <textarea th:field="*{addressLine}" placeholder="Address (Area and Street) *"></textarea>
+
+        <div class="form-row">
+            <div><input type="text" th:field="*{city}" placeholder="City/District/Town *"></div>
+            <div>
+                <select th:field="*{state}">
+                    <option value="">Select State</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div><input type="text" th:field="*{landmark}" placeholder="Landmark (Optional)"></div>
+            <div><input type="text" th:field="*{alternate_phone}" placeholder="Alternate Phone (Optional)"></div>
+        </div>
+
+        <div class="radio-group">
+            <label><input type="radio" th:field="*{address_type}" value="Home" checked> Home</label>
+            <label><input type="radio" th:field="*{address_type}" value="Work"> Work</label>
+        </div>
+
+        <button type="submit">Save Address</button>
+    </form>
+</div>
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>
