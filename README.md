@@ -10,41 +10,50 @@ It supports full **user flow** (login → product browse → cart → checkout �
 ### 🏠 Home Page
 Browse all products, search by name, and view by category.
 
-<img width="1812" height="828" alt="Screenshot 2025-08-04 211139" src="https://github.com/user-attachments/assets/992cccc4-2f35-4a48-b1e5-c356da03d7e7" />
-<img width="1830" height="767" alt="Screenshot 2025-08-04 211153" src="https://github.com/user-attachments/assets/bdbbf65e-13ff-40ab-b3ec-3814096c4edd" />
+<img width="1862" height="808" alt="Screenshot 2026-07-05 134934" src="https://github.com/user-attachments/assets/032551b3-f484-4271-9386-f6e230e5cdba" />
+
 
 ### 🔍 Product Detail Page
 Click to view detailed information.
-<img width="1817" height="866" alt="Screenshot 2025-08-04 211226" src="https://github.com/user-attachments/assets/5bf04d83-2e5a-4ed0-a9a2-d4b42e67ea29" />
+<img width="1860" height="816" alt="Screenshot 2026-07-05 134953" src="https://github.com/user-attachments/assets/31fe076e-01ae-4837-ba7a-8d0fa27b515a" />
+
 
 
 ### 🛒 Cart Page
 Manage your cart items dynamically.
-<img width="1822" height="544" alt="Screenshot 2025-08-04 212413" src="https://github.com/user-attachments/assets/96bc4087-2545-40a0-8a71-0e898cd7a466" />
+<img width="1336" height="770" alt="Screenshot 2026-07-05 135709" src="https://github.com/user-attachments/assets/c4e64c38-215f-40ae-aed6-d2927fbaf593" />
+<img width="1830" height="516" alt="Screenshot 2026-07-05 135047" src="https://github.com/user-attachments/assets/a6d8314e-1c0a-44e7-a636-372fb8f37513" />
+
 
 
 
 ### ✅ Checkout Page
 Confirm and place your order.
+<img width="1336" height="770" alt="Screenshot 2026-07-05 135709" src="https://github.com/user-attachments/assets/06c03e19-6f76-4336-b82e-0839a2f5710f" />
+
 
 
 
 ### 📦 My Orders Page
 List of all orders placed by the user.
-<img width="1819" height="570" alt="Screenshot 2025-08-04 212430" src="https://github.com/user-attachments/assets/c33bf78a-bc08-4ddf-89be-e37c27d3a26a" />
+<img width="1841" height="527" alt="Screenshot 2026-07-05 135036" src="https://github.com/user-attachments/assets/b6d62db1-6c94-494e-9f72-d0727214c6d3" />
+
 
 
 
 ### 🔐 Login / Register
 Secure login and user registration.
-<img width="1808" height="919" alt="Screenshot 2025-08-04 211945" src="https://github.com/user-attachments/assets/858c2758-0bc8-426b-9505-d494fce89795" />
+<img width="1773" height="917" alt="Screenshot 2026-07-05 135019" src="https://github.com/user-attachments/assets/89ac0c76-9b00-4b57-9de9-d5eaad000efd" />
+<img width="1888" height="762" alt="Screenshot 2026-07-05 135010" src="https://github.com/user-attachments/assets/7a6fef3d-3d46-4781-bb30-a41b886fd00f" />
+
 
 
 ### ⚙️ Admin Dashboard
 Manage products, orders, and users.
-<img width="1797" height="868" alt="Screenshot 2025-08-04 212320" src="https://github.com/user-attachments/assets/6205f17a-3df0-4d81-b738-99fc734b327f" />
-<img width="1844" height="810" alt="Screenshot 2025-08-04 212339" src="https://github.com/user-attachments/assets/e93e5835-5210-4903-b921-ee6f8e141195" />
-<img width="1678" height="741" alt="Screenshot 2025-08-04 212352" src="https://github.com/user-attachments/assets/e4e456d7-420a-4bad-8c8f-cc81e1c2e5c0" />
+<img width="1790" height="761" alt="Screenshot 2026-07-05 135443" src="https://github.com/user-attachments/assets/c13f377d-5c62-4373-9ab5-55429b90e59c" />
+<img width="1551" height="748" alt="Screenshot 2026-07-05 135621" src="https://github.com/user-attachments/assets/3b09f67b-3530-4303-8f1c-59d0a4c2c4cd" />
+<img width="1885" height="356" alt="Screenshot 2026-07-05 135515" src="https://github.com/user-attachments/assets/a40a8a68-5697-446b-9fb1-7d27a8e82024" />
+
 
 
 ---
